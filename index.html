@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- FontFamily -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/media_query.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="home" class="d-none">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container w-75 px-4">
+                <a id="logo" class="navbar-brand primaryTxt text-white text-decoration-none " href="#">SMART LOGIN</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  align-self-end" id="navbarSupportedContent">
+                    <button id="logOutBtn" class="rounded my-2 my-sm-0" type="submit">LogOut</button>
+                </div>
+            </div>
+
+        </nav>
+        <div class="d-grid vh-100 vw-100">
+            <div id="Container" class="container m-auto w-50  p-5">
+                <div class="row p-3">
+
+                    <p class="text-center bigTxt">Welcome <span id="UserName"></span></p>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div id="loginSystem" class="d-grid vh-100 vw-100">
+        <div id="Container" class="container m-auto w-50  p-5">
+            <div class="row gy-4">
+                <h2 class="text-center bigTxt ">Smart Login System</h2>
+
+                <div id="form" class="row g-3">
+                    <input class=" primaryTxt rounded bg-transparent  text-white d-none " type="text" name="Name"
+                        id="Name" placeholder="Enter your Name">
+                    <input class="primaryTxt rounded bg-transparent  text-white " type="email" name="Email" id="Email"
+                        placeholder="Enter your Email">
+                    <div class="position-relative  p-0">
+                        <input class="primaryTxt rounded bg-transparent position-relative w-100 text-white"
+                            type="password" name="Email" id="Password" placeholder="Enter your password">
+                        <i id="eyeOpen" class="fa-solid fa-eye text-white position-absolute end-0 me-3  d-none"></i>
+                        <i id="eyeClosed" class="fa-solid fa-eye-slash text-white  position-absolute end-0 me-3"></i>
+                    </div>
+                </div>
+                <p id="wrongTxt" class="text-center text-danger primaryTxt  d-none ">All inputs is required</p>
+                <p id="SuccessTxt" class="text-center text-success primaryTxt  d-none ">Success</p>
+
+                <button id="LoginBtn" class=" rounded primaryTxt">Login</button>
+
+                <button id="SignUpBtn" class=" rounded primaryTxt d-none">SignUp</button>
+
+
+                <p id="signUpCaption" class="text-center text-white">Don’t have an account? <a id="toSignup" href="#"
+                        class="text-white ">Sign
+                        up</a></p>
+
+                <p id="signinCaption" class="text-center text-white d-none">You have an account? <a id="toSignin"
+                        href="#" class="text-white ">Sign
+                        in</a></p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/gh/xxjapp/xdialog@3/xdialog.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
